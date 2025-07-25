@@ -10,6 +10,7 @@ import { Switch } from "@/components/ui/switch"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
+import UserEmailConfigForm from "./user-email-config-form"
 
 export default function AdminSettings() {
   const [settings, setSettings] = useState({
@@ -191,32 +192,10 @@ export default function AdminSettings() {
                 <Mail className="h-5 w-5" />
                 Email Configuration
               </CardTitle>
-              <CardDescription>Configure SMTP settings and email templates</CardDescription>
+              <CardDescription>Configure SMTP/IMAP settings for your email account (Gmail, Outlook, etc.)</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="smtpServer">SMTP Server</Label>
-                  <Input id="smtpServer" placeholder="smtp.example.com" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="smtpPort">SMTP Port</Label>
-                  <Input id="smtpPort" type="number" placeholder="587" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="smtpUsername">Username</Label>
-                  <Input id="smtpUsername" placeholder="username@example.com" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="smtpPassword">Password</Label>
-                  <Input id="smtpPassword" type="password" placeholder="••••••••" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="fromEmail">Default From Email</Label>
-                <Input id="fromEmail" placeholder="noreply@example.com" />
-              </div>
-              <Button>Save Email Settings</Button>
+              <UserEmailConfigForm />
             </CardContent>
           </Card>
         </TabsContent>

@@ -3065,3 +3065,341 @@ WARNING 2025-07-23 23:01:51,758 log 10800 5780 Bad Request: /api/emails/
 WARNING 2025-07-23 23:02:04,021 log 10800 5780 Bad Request: /api/emails/
 WARNING 2025-07-23 23:11:13,443 log 10800 9740 Not Found: /api/emails/undefined/
 WARNING 2025-07-23 23:14:34,931 log 10800 10980 Not Found: /api/emails/undefined/
+INFO 2025-07-24 19:02:47,593 autoreload 12972 11916 Watching for file changes with StatReloader
+WARNING 2025-07-24 19:05:07,225 log 12972 3164 Unauthorized: /api/users/me/
+WARNING 2025-07-24 19:21:43,694 log 12972 2036 Bad Request: /api/email-attachments/
+INFO 2025-07-24 19:25:54,702 autoreload 12972 11916 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\views.py changed, reloading.
+INFO 2025-07-24 19:26:06,684 autoreload 12516 1840 Watching for file changes with StatReloader
+INFO 2025-07-24 19:26:12,334 autoreload 12516 1840 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\serializers.py changed, reloading.
+INFO 2025-07-24 19:26:17,731 autoreload 12896 12408 Watching for file changes with StatReloader
+INFO 2025-07-24 19:26:22,492 autoreload 12896 12408 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\views.py changed, reloading.
+INFO 2025-07-24 19:26:26,785 autoreload 12912 10964 Watching for file changes with StatReloader
+WARNING 2025-07-24 19:32:44,915 log 12912 4520 Not Found: /api/emails/undefined/
+WARNING 2025-07-24 19:35:20,717 log 12912 6504 Not Found: /api/emails/undefined/
+WARNING 2025-07-24 19:35:23,328 log 12912 6504 Not Found: /api/emails/undefined/
+WARNING 2025-07-24 19:35:24,317 log 12912 6504 Not Found: /api/emails/undefined/
+WARNING 2025-07-24 19:35:25,185 log 12912 6504 Not Found: /api/emails/undefined/
+INFO 2025-07-24 19:39:59,858 autoreload 12912 10964 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\views.py changed, reloading.
+INFO 2025-07-24 19:40:04,597 autoreload 7904 1028 Watching for file changes with StatReloader
+INFO 2025-07-24 19:40:21,125 autoreload 7904 1028 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\views.py changed, reloading.
+INFO 2025-07-24 19:40:26,523 autoreload 9044 10832 Watching for file changes with StatReloader
+WARNING 2025-07-24 19:43:04,091 log 9044 4740 Bad Request: /api/emails/
+INFO 2025-07-24 19:43:21,767 autoreload 9044 10832 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\views.py changed, reloading.
+INFO 2025-07-24 19:43:27,243 autoreload 10768 5864 Watching for file changes with StatReloader
+INFO 2025-07-24 19:43:57,149 autoreload 10768 5864 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\views.py changed, reloading.
+INFO 2025-07-24 19:44:04,531 autoreload 11180 2124 Watching for file changes with StatReloader
+WARNING 2025-07-24 19:44:05,955 log 11180 8520 Bad Request: /api/emails/
+WARNING 2025-07-24 19:44:09,597 log 11180 8520 Bad Request: /api/emails/
+WARNING 2025-07-24 19:44:10,180 log 11180 8520 Bad Request: /api/emails/
+WARNING 2025-07-24 19:44:10,444 log 11180 8520 Bad Request: /api/emails/
+WARNING 2025-07-24 19:44:11,001 log 11180 8520 Bad Request: /api/emails/
+WARNING 2025-07-24 19:44:25,317 log 11180 8520 Bad Request: /api/emails/
+WARNING 2025-07-24 19:44:25,659 log 11180 8520 Bad Request: /api/emails/
+WARNING 2025-07-24 19:44:25,938 log 11180 8520 Bad Request: /api/emails/
+WARNING 2025-07-24 19:45:00,823 log 11180 4500 Bad Request: /api/emails/
+WARNING 2025-07-24 19:45:01,302 log 11180 4500 Bad Request: /api/emails/
+INFO 2025-07-24 19:47:41,769 views 11180 4500 Email draft created: id=27, user=samuelgetachewsgt@gmail.com
+WARNING 2025-07-24 19:48:03,746 log 11180 8520 Not Found: /api/emails/
+WARNING 2025-07-24 19:49:40,493 log 11180 4496 Not Found: /api/emails/
+WARNING 2025-07-24 19:49:47,045 log 11180 4496 Not Found: /api/emails/
+WARNING 2025-07-24 19:49:54,033 log 11180 4488 Not Found: /api/emails/
+WARNING 2025-07-24 19:50:57,485 log 11180 8520 Not Found: /api/emails/
+WARNING 2025-07-24 19:51:28,274 log 11180 4500 Not Found: /api/emails/
+WARNING 2025-07-24 19:51:39,023 log 11180 4496 Not Found: /api/emails/
+WARNING 2025-07-24 19:51:40,351 log 11180 4500 Not Found: /api/emails/
+WARNING 2025-07-24 19:51:41,743 log 11180 4496 Not Found: /api/emails/
+WARNING 2025-07-24 19:51:49,317 log 11180 4488 Not Found: /api/emails/
+WARNING 2025-07-24 19:51:51,251 log 11180 4500 Not Found: /api/emails/
+WARNING 2025-07-24 19:51:57,206 log 11180 4496 Not Found: /api/emails/
+WARNING 2025-07-24 19:51:58,498 log 11180 8520 Not Found: /api/emails/
+WARNING 2025-07-24 19:52:04,581 log 11180 4496 Not Found: /api/emails/
+WARNING 2025-07-24 19:52:05,968 log 11180 4488 Not Found: /api/emails/
+WARNING 2025-07-24 19:52:10,060 log 11180 4496 Not Found: /api/emails/
+WARNING 2025-07-24 19:52:12,076 log 11180 4500 Not Found: /api/emails/
+WARNING 2025-07-24 19:52:28,052 log 11180 4488 Not Found: /api/emails/
+WARNING 2025-07-24 19:54:10,393 log 11180 4488 Not Found: /api/emails/
+WARNING 2025-07-24 19:54:20,419 log 11180 4496 Not Found: /api/emails/
+WARNING 2025-07-24 19:55:30,679 log 11180 4496 Not Found: /api/emails/
+WARNING 2025-07-24 19:56:23,810 log 11180 4488 Not Found: /api/emails/
+WARNING 2025-07-24 19:56:38,041 log 11180 4500 Not Found: /api/emails/
+WARNING 2025-07-24 19:56:52,655 log 11180 8520 Not Found: /api/emails/
+WARNING 2025-07-24 19:56:53,988 log 11180 4500 Not Found: /api/emails/
+INFO 2025-07-24 19:57:32,100 autoreload 11180 2124 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\serializers.py changed, reloading.
+INFO 2025-07-24 19:57:38,817 autoreload 6572 6916 Watching for file changes with StatReloader
+INFO 2025-07-24 19:58:12,177 views 6572 3548 Email draft created: id=28, user=samuelgetachewsgt@gmail.com
+ERROR 2025-07-24 20:10:49,488 log 6572 3548 Internal Server Error: /api/emails/send_email/
+WARNING 2025-07-24 20:13:23,196 log 6572 3548 Unauthorized: /api/emails/
+WARNING 2025-07-24 20:13:23,199 log 6572 2884 Unauthorized: /api/contacts/
+WARNING 2025-07-24 20:13:23,203 log 6572 10332 Unauthorized: /api/email-configs/
+WARNING 2025-07-24 20:13:23,205 log 6572 1316 Unauthorized: /api/companies/
+INFO 2025-07-24 20:24:59,341 autoreload 6572 6916 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\views.py changed, reloading.
+INFO 2025-07-24 20:25:15,813 autoreload 8176 9648 Watching for file changes with StatReloader
+ERROR 2025-07-24 20:52:32,819 log 8176 8972 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-24 20:59:25,880 log 8176 1444 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-24 21:00:01,650 log 8176 2648 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-24 21:35:57,672 log 8176 2396 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 21:40:11,362 log 8176 13256 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+WARNING 2025-07-24 21:45:44,407 log 8176 264 Unauthorized: /api/email-configs/
+WARNING 2025-07-24 21:45:44,416 log 8176 264 Unauthorized: /api/email-configs/
+ERROR 2025-07-24 21:46:42,139 log 8176 8848 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+INFO 2025-07-24 21:51:08,189 autoreload 2032 7536 Watching for file changes with StatReloader
+ERROR 2025-07-24 21:52:05,880 log 2032 8220 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 22:03:26,361 log 2032 8588 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 22:04:17,274 log 2032 13444 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 22:04:18,656 log 2032 14172 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 22:04:38,051 log 2032 14200 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 22:04:39,622 log 2032 14248 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 22:04:40,472 log 2032 14228 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 22:04:41,071 log 2032 13568 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 22:07:14,943 log 2032 8496 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-24 22:11:48,002 log 2032 2992 Internal Server Error: /api/email-configs/1/test_connection
+Traceback (most recent call last):
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\sami\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/email-configs/1/test_connection/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+INFO 2025-07-24 22:17:06,464 autoreload 2032 7536 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\mint_crm\settings.py changed, reloading.
+INFO 2025-07-24 22:17:11,636 autoreload 8428 11336 Watching for file changes with StatReloader
+INFO 2025-07-24 22:18:26,485 autoreload 9888 3992 Watching for file changes with StatReloader
+WARNING 2025-07-24 22:18:31,001 log 9888 7644 Not Found: /api/email-configs/1/test_connection
+WARNING 2025-07-24 22:18:54,584 log 9888 11900 Not Found: /api/email-configs/1/test_connection
+INFO 2025-07-24 22:20:59,940 autoreload 9888 3992 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\mint_crm\settings.py changed, reloading.
+INFO 2025-07-24 22:21:05,134 autoreload 14172 3400 Watching for file changes with StatReloader
+INFO 2025-07-24 22:30:38,047 autoreload 14172 3400 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\api\urls.py changed, reloading.
+INFO 2025-07-24 22:31:01,754 autoreload 9636 14272 Watching for file changes with StatReloader
+WARNING 2025-07-24 23:02:30,202 log 9636 412 Not Found: /api/email-configs/1/test_connection
+WARNING 2025-07-24 23:19:52,960 log 9636 13912 Not Found: /api/email-configs/1/test_connection
+WARNING 2025-07-24 23:23:01,130 log 9636 14140 Not Found: /api/email-configs/1/test_connection
+WARNING 2025-07-24 23:39:32,127 log 9636 14188 Not Found: /api/email-configs/1/test_connection
+WARNING 2025-07-24 23:39:59,542 log 9636 7500 Not Found: /api/email-configs/1/test_connection
+WARNING 2025-07-24 23:40:56,830 log 9636 3876 Not Found: /api/email-configs/1/test_connection
+WARNING 2025-07-24 23:48:47,640 log 9636 13228 Not Found: /api/email-configs/1/test_connection
+WARNING 2025-07-24 23:56:00,114 log 9636 11832 Unauthorized: /api/email-configs/
+WARNING 2025-07-24 23:56:00,822 log 9636 11832 Not Found: /favicon.ico
+WARNING 2025-07-25 00:00:45,327 log 9636 11296 Not Found: /api/email-configs/1/test_connection
+ERROR 2025-07-25 00:11:49,329 log 9636 12376 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 00:18:33,906 log 9636 14160 Internal Server Error: /api/emails/send_email/
+INFO 2025-07-25 00:20:43,881 views 9636 10024 Email draft created: id=37, user=admin@mintcrm.com
+INFO 2025-07-25 00:25:38,459 views 9636 14136 Email draft created: id=38, user=admin@mintcrm.com
+WARNING 2025-07-25 00:25:46,040 log 9636 14136 Not Found: /api/emails/undefined/
+ERROR 2025-07-25 00:26:09,052 log 9636 14136 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 00:30:12,379 log 9636 14136 Internal Server Error: /api/emails/send_email/
+INFO 2025-07-25 00:30:26,893 views 9636 14136 Email draft created: id=41, user=samuelgetachewsgt@gmail.com
+ERROR 2025-07-25 00:30:40,152 log 9636 14160 Internal Server Error: /api/emails/send_email/
+INFO 2025-07-25 18:52:56,747 autoreload 9960 10536 Watching for file changes with StatReloader
+WARNING 2025-07-25 18:53:16,035 log 9960 11896 Unauthorized: /api/email-configs/
+WARNING 2025-07-25 18:53:16,042 log 9960 11068 Unauthorized: /api/email-configs/
+ERROR 2025-07-25 18:55:57,137 log 9960 12928 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 19:01:32,721 log 9960 12724 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 19:01:42,604 log 9960 6864 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 19:01:42,605 log 9960 12724 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 19:01:43,563 log 9960 9692 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 19:01:43,564 log 9960 6576 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 19:01:43,604 log 9960 5672 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 19:01:43,719 log 9960 6236 Internal Server Error: /api/emails/send_email/
+ERROR 2025-07-25 19:04:04,634 log 9960 6236 Internal Server Error: /api/emails/send_email/
+WARNING 2025-07-25 19:07:31,660 log 9960 9692 Bad Request: /api/users/signup/
+WARNING 2025-07-25 19:07:58,367 log 9960 9692 Unauthorized: /api/token/
+WARNING 2025-07-25 19:24:22,037 log 9960 12052 Unauthorized: /api/reports/dashboard-stats/
+INFO 2025-07-25 19:27:52,813 autoreload 9960 10536 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\services.py changed, reloading.
+ERROR 2025-07-25 19:32:01,571 log 9960 1268 Internal Server Error: /api/emails/send_email/
+INFO 2025-07-25 19:35:41,566 autoreload 11636 6236 Watching for file changes with StatReloader
+WARNING 2025-07-25 19:37:18,404 log 11636 3584 Unauthorized: /api/token/
+WARNING 2025-07-25 19:40:03,331 log 11636 1700 Bad Request: /api/users/signup/
+INFO 2025-07-25 20:02:48,569 views 11636 7224 Email draft created: id=57, user=kassaye599@gmail.com
+WARNING 2025-07-25 20:03:36,437 log 11636 8864 Not Found: /api/emails/56/
+WARNING 2025-07-25 20:03:37,021 log 11636 8864 Not Found: /api/emails/56/
+WARNING 2025-07-25 20:03:37,287 log 11636 8864 Not Found: /api/emails/56/
+INFO 2025-07-25 20:04:36,037 autoreload 11636 6236 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\services.py changed, reloading.
+INFO 2025-07-25 20:04:40,983 autoreload 2904 3656 Watching for file changes with StatReloader
+INFO 2025-07-25 20:04:49,191 autoreload 2904 3656 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\services.py changed, reloading.
+INFO 2025-07-25 20:04:53,871 autoreload 2360 12088 Watching for file changes with StatReloader
+INFO 2025-07-25 20:07:42,746 autoreload 6664 3940 Watching for file changes with StatReloader
+INFO 2025-07-25 20:12:34,575 autoreload 11564 10076 Watching for file changes with StatReloader
+WARNING 2025-07-25 20:22:02,130 log 11564 10708 Unauthorized: /api/token/
+WARNING 2025-07-25 20:22:23,349 log 11564 10708 Unauthorized: /api/token/
+WARNING 2025-07-25 20:22:34,684 log 11564 10708 Unauthorized: /api/token/
+INFO 2025-07-25 21:35:21,621 autoreload 11564 10076 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\services.py changed, reloading.
+INFO 2025-07-25 21:35:31,253 autoreload 13076 13000 Watching for file changes with StatReloader
+INFO 2025-07-25 21:35:35,702 autoreload 13076 13000 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\services.py changed, reloading.
+INFO 2025-07-25 21:35:40,159 autoreload 6096 12816 Watching for file changes with StatReloader
+WARNING 2025-07-25 21:43:34,721 log 6096 11676 Unauthorized: /api/token/
+WARNING 2025-07-25 21:45:14,124 log 6096 8000 Not Found: /api/email-configs/3/test_connection
+ERROR 2025-07-25 21:46:28,058 log 6096 7212 Internal Server Error: /api/emails/send_email/
+INFO 2025-07-25 21:46:57,437 autoreload 6096 12816 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\services.py changed, reloading.
+INFO 2025-07-25 21:47:02,572 autoreload 6872 8432 Watching for file changes with StatReloader
+INFO 2025-07-25 21:49:33,190 autoreload 6872 8432 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\services.py changed, reloading.
+INFO 2025-07-25 21:49:41,346 autoreload 6096 13608 Watching for file changes with StatReloader
+INFO 2025-07-25 21:57:52,159 autoreload 6096 13608 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\services.py changed, reloading.
+INFO 2025-07-25 21:57:56,498 autoreload 932 3664 Watching for file changes with StatReloader
+INFO 2025-07-25 21:58:03,172 autoreload 932 3664 C:\Users\sami\Downloads\Telegram Desktop\MINTt\mint-crm-backend\emails\services.py changed, reloading.
+INFO 2025-07-25 21:58:07,569 autoreload 11940 7548 Watching for file changes with StatReloader
+WARNING 2025-07-25 22:17:16,386 log 11940 5692 Unauthorized: /api/token/
+WARNING 2025-07-25 22:19:41,843 log 11940 13512 Unauthorized: /api/token/
+WARNING 2025-07-25 22:28:33,331 log 11940 14016 Unauthorized: /api/emails/sync/
+WARNING 2025-07-25 22:28:34,736 log 11940 14016 Not Found: /favicon.ico
+WARNING 2025-07-25 22:30:34,804 log 11940 128 Unauthorized: /api/emails/sync/

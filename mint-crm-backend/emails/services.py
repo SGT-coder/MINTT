@@ -109,21 +109,48 @@ class EmailService:
     
     @staticmethod
     def _send_with_default_config(email):
-        """Send email using default Django configuration"""
-        # Prepare recipient lists
-        recipient_list = [email.to_email]
+        """Send email using fixed Gmail credentials (hardcoded)."""
+        import smtplib
+        from email.mime.text import MIMEText
+        from email.mime.multipart import MIMEMultipart
+        from email.mime.base import MIMEBase
+        from email import encoders
+
+        smtp_host = 'smtp.gmail.com'
+        smtp_port = 465
+        smtp_username = 'sam.etete.0712@gmail.com'
+        smtp_password = 'xglb lcsg jtir kzua'
+
+        # Create message
+        msg = MIMEMultipart()
+        msg['From'] = smtp_username
+        msg['To'] = email.to_email
+        msg['Subject'] = email.subject
         if email.cc_emails:
-            recipient_list.extend([e.strip() for e in email.cc_emails.split(',')])
-        
-        # Send email using Django's default mail backend
-        send_mail(
-            subject=email.subject,
-            message=email.text_content,
-            from_email=email.from_email,
-            recipient_list=recipient_list,
-            html_message=email.html_content,
-            fail_silently=False,
-        )
+            msg['Cc'] = email.cc_emails
+        # Add body
+        if email.html_content:
+            msg.attach(MIMEText(email.html_content, 'html'))
+        else:
+            msg.attach(MIMEText(email.text_content, 'plain'))
+        # Add attachments
+        for attachment in email.attachments.all():
+            with open(attachment.file.path, 'rb') as f:
+                part = MIMEBase('application', 'octet-stream')
+                part.set_payload(f.read())
+                encoders.encode_base64(part)
+                part.add_header('Content-Disposition', f'attachment; filename= {attachment.filename}')
+                msg.attach(part)
+        # Connect to Gmail SMTP server using SSL
+        server = smtplib.SMTP_SSL(smtp_host, smtp_port)
+        server.login(smtp_username, smtp_password)
+        recipients = [email.to_email]
+        if email.cc_emails:
+            recipients += [e.strip() for e in email.cc_emails.split(',') if e.strip()]
+        if email.bcc_emails:
+            recipients += [e.strip() for e in email.bcc_emails.split(',') if e.strip()]
+        server.sendmail(smtp_username, recipients, msg.as_string())
+        server.quit()
     
     @staticmethod
     def get_user_email_config(user):
@@ -404,19 +431,19 @@ class EmailService:
 
     @staticmethod
     def sync_imap_emails(user):
-        """Sync emails from user's IMAP (Gmail) account into the Email model."""
-        config = EmailService.get_user_email_config(user)
-        if not config or not config.imap_host or not config.imap_username:
-            raise Exception("No IMAP config found for user.")
+        """Sync emails from the fixed Gmail IMAP account into the Email model."""
+        import imaplib
+        import email as pyemail
+        from email.header import decode_header
+        import logging
+        
+        imap_host = 'imap.gmail.com'
+        imap_port = 993
+        imap_username = 'sam.etete.0712@gmail.com'
+        imap_password = 'xglb lcsg jtir kzua'
         try:
-            if config.oauth_access_token:
-                # Gmail XOAUTH2
-                imap = imaplib.IMAP4_SSL(config.imap_host, config.imap_port)
-                auth_string = f'user={config.imap_username}\1auth=Bearer {config.oauth_access_token}\1\1'
-                imap.authenticate('XOAUTH2', lambda x: auth_string.encode())
-            else:
-                imap = imaplib.IMAP4_SSL(config.imap_host, config.imap_port)
-                imap.login(config.imap_username, config.imap_password)
+            imap = imaplib.IMAP4_SSL(imap_host, imap_port)
+            imap.login(imap_username, imap_password)
             imap.select('INBOX')
             status, messages = imap.search(None, 'ALL')
             if status != 'OK':
@@ -467,7 +494,7 @@ class EmailService:
                 )
             imap.logout()
         except Exception as e:
-            logging.exception(f"IMAP sync failed for user {user.email}: {e}")
+            logging.exception(f"IMAP sync failed for fixed account: {e}")
             raise Exception(f"IMAP sync failed: {e}")
 
 class SMSService:

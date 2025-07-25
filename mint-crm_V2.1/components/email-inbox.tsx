@@ -46,9 +46,6 @@ export default function EmailInbox() {
   const [companies, setCompanies] = useState<Company[]>([])
   const [emailConfigOk, setEmailConfigOk] = useState<boolean | null>(null)
   const [emailConfigLoading, setEmailConfigLoading] = useState(true)
-  const [page, setPage] = useState(1)
-  const [pageSize] = useState(10)
-  const [totalCount, setTotalCount] = useState(0)
   
   const [newEmail, setNewEmail] = useState({
     to: "",
@@ -97,16 +94,16 @@ export default function EmailInbox() {
     try {
       setLoading(true)
       let response
-      const params = { search: searchQuery || undefined, ordering: "-created_at", page, page_size: pageSize }
+      const params = { search: searchQuery || undefined, ordering: "-created_at" }
       switch (activeTab) {
         case "inbox":
-          response = await apiService.getInboxEmails({ ...params, filter: filter as any })
+          response = await apiService.getInboxEmails(params)
           break
         case "sent":
           response = await apiService.getSentEmails(params)
           break
         case "drafts":
-          response = await apiService.getDraftEmails({ ...params })
+          response = await apiService.getDraftEmails(params)
           break
         default:
           response = await apiService.getInboxEmails(params)
@@ -117,9 +114,8 @@ export default function EmailInbox() {
         sender_email: email.from_email
       }))
       setEmails(emailsWithSender)
-      setTotalCount(response.count || 0)
-    } catch (error) {
-      console.error("Error loading emails:", error)
+      // setTotalCount(response.count || 0) // Remove totalCount
+    } catch (error: any) {
       toast({ title: "Error", description: "Failed to load emails", variant: "destructive" })
     } finally {
       setLoading(false)
@@ -159,7 +155,7 @@ export default function EmailInbox() {
       const hasVerified = res.results.some(cfg => cfg.is_active && cfg.is_verified)
       setEmailConfigOk(hasVerified)
     }).catch(() => setEmailConfigOk(false)).finally(() => setEmailConfigLoading(false))
-  }, [activeTab, searchQuery, filter, page])
+  }, [activeTab, searchQuery, filter])
 
   // Modified openCompose to load attachments if editing a draft
   const openCompose = async (draft?: EmailWithSender) => {
@@ -194,6 +190,7 @@ export default function EmailInbox() {
           subject: newEmail.subject,
           to_email: newEmail.to,
           text_content: newEmail.body,
+          from_email: user?.email || "",
         })
       } else {
         // Create new draft
@@ -201,6 +198,7 @@ export default function EmailInbox() {
           subject: newEmail.subject,
           to_email: newEmail.to,
           text_content: newEmail.body,
+          from_email: user?.email || "",
         })
       }
       toast({ title: "Success", description: "Draft saved successfully." })
@@ -480,9 +478,9 @@ export default function EmailInbox() {
   }
 
   // Pagination controls
-  const totalPages = Math.ceil(totalCount / pageSize)
-  const handlePrevPage = () => setPage((p) => Math.max(1, p - 1))
-  const handleNextPage = () => setPage((p) => Math.min(totalPages, p + 1))
+  // const totalPages = Math.ceil(totalCount / pageSize)
+  // const handlePrevPage = () => setPage((p) => Math.max(1, p - 1))
+  // const handleNextPage = () => setPage((p) => Math.min(totalPages, p + 1))
 
   return (
     <div className="space-y-6">
@@ -650,14 +648,14 @@ export default function EmailInbox() {
                     <div className="flex items-center justify-center py-8">
                       <RefreshCw className="h-6 w-6 animate-spin" />
                     </div>
-                  ) : emails.length === 0 ? (
+                  ) : emails.filter(email => email.email_type === 'inbound' && email.status !== 'draft').length === 0 ? (
                     <div className="text-center py-8">
                       <Mail className="h-12 w-12 mx-auto text-gray-400 mb-4" />
                       <p className="text-muted-foreground">No emails found</p>
                     </div>
                   ) : (
                     <div className="space-y-2">
-                      {emails.map((email) => (
+                      {emails.filter(email => email.email_type === 'inbound' && email.status !== 'draft').map((email) => (
                         <div
                           key={email.id}
                           className={`p-4 border rounded-lg cursor-pointer transition-colors ${
@@ -824,7 +822,7 @@ export default function EmailInbox() {
               )}
             </div>
           </div>
-          {emails.length > 0 && (
+          {/* {emails.length > 0 && (
             <div className="flex items-center justify-between mt-4">
               <span>Page {page} of {totalPages} ({totalCount} emails)</span>
               <div className="space-x-2">
@@ -832,7 +830,7 @@ export default function EmailInbox() {
                 <Button variant="outline" size="sm" onClick={handleNextPage} disabled={page === totalPages}>Next</Button>
               </div>
             </div>
-          )}
+          )} */}
         </TabsContent>
 
         <TabsContent value="sent" className="space-y-4">
@@ -858,14 +856,14 @@ export default function EmailInbox() {
                     <div className="flex items-center justify-center py-8">
                       <RefreshCw className="h-6 w-6 animate-spin" />
                     </div>
-                  ) : emails.length === 0 ? (
+                  ) : emails.filter(email => email.status === 'sent').length === 0 ? (
                     <div className="text-center py-8">
                       <SendIcon className="h-12 w-12 mx-auto text-gray-400 mb-4" />
                       <p className="text-muted-foreground">No sent emails found</p>
                     </div>
                   ) : (
                     <div className="space-y-2">
-                      {emails.map((email) => (
+                      {emails.filter(email => email.status === 'sent').map((email) => (
                         <div
                           key={email.id}
                           className={`p-4 border rounded-lg cursor-pointer transition-colors ${
@@ -883,15 +881,8 @@ export default function EmailInbox() {
                             <div className="flex-1 space-y-1">
                               <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-2">
-                                                              <span className="font-medium">{email.to_email}</span>
-                            {email.priority && (
-                              <Badge variant={getPriorityColor(email.priority)} className="text-xs">
-                                {email.priority}
-                              </Badge>
-                            )}
-                                  <Badge variant={email.status === 'sent' ? 'default' : 'secondary'} className="text-xs">
-                                    {email.status}
-                                  </Badge>
+                                  <span className="font-medium">{email.to_email}</span>
+                                  <Badge variant="outline" className="text-xs">Sent</Badge>
                                 </div>
                                 <span className="text-xs text-muted-foreground">{formatDate(email.created_at)}</span>
                               </div>
@@ -958,7 +949,7 @@ export default function EmailInbox() {
               )}
             </div>
           </div>
-          {emails.length > 0 && (
+          {/* {emails.length > 0 && (
             <div className="flex items-center justify-between mt-4">
               <span>Page {page} of {totalPages} ({totalCount} emails)</span>
               <div className="space-x-2">
@@ -966,7 +957,7 @@ export default function EmailInbox() {
                 <Button variant="outline" size="sm" onClick={handleNextPage} disabled={page === totalPages}>Next</Button>
               </div>
             </div>
-          )}
+          )} */}
         </TabsContent>
 
         <TabsContent value="drafts" className="space-y-4">
@@ -979,14 +970,14 @@ export default function EmailInbox() {
                 <div className="flex items-center justify-center py-8">
                   <RefreshCw className="h-6 w-6 animate-spin" />
                 </div>
-              ) : emails.length === 0 ? (
+              ) : emails.filter(email => email.status === 'draft').length === 0 ? (
                 <div className="text-center py-8">
                   <FileText className="h-12 w-12 mx-auto text-gray-400 mb-4" />
                   <p className="text-muted-foreground">No draft emails found</p>
                 </div>
               ) : (
                 <div className="space-y-2">
-                  {emails.map((email) => (
+                  {emails.filter(email => email.status === 'draft').map((email) => (
                     <div
                       key={email.id}
                       className={`p-4 border rounded-lg cursor-pointer transition-colors ${

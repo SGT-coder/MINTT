@@ -1985,6 +1985,16 @@ class ApiService {
       method: 'DELETE',
     });
   }
+
+  /**
+   * Sync emails for the authenticated user.
+   * This will include the Authorization header automatically.
+   */
+  async syncEmails(): Promise<any> {
+    return this.request('/emails/sync/', {
+      method: 'POST',
+    });
+  }
 }
 
 export const apiService = new ApiService(); 

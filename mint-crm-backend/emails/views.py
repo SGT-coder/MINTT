@@ -26,6 +26,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework import serializers
+import logging
+logger = logging.getLogger(__name__)
 
 class EmailViewSet(viewsets.ModelViewSet):
     """ViewSet for Email model"""
@@ -37,11 +39,23 @@ class EmailViewSet(viewsets.ModelViewSet):
     search_fields = ['subject', 'to_email', 'from_email']
     ordering_fields = ['created_at', 'sent_at', 'subject']
     ordering = ['-created_at']
+
+    def get_queryset(self):
+        # Only allow users to see/update their own emails
+        return Email.objects.filter(user=self.request.user)
     
     def get_serializer_class(self):
         if self.action == 'create':
             return EmailCreateSerializer
         return EmailSerializer
+    
+    def perform_create(self, serializer):
+        instance = serializer.save(user=self.request.user)
+        logger.info(f"Email draft created: id={instance.id}, user={self.request.user.email}")
+
+    def perform_update(self, serializer):
+        instance = serializer.save()
+        logger.info(f"Email draft updated: id={instance.id}, user={self.request.user.email}")
     
     @action(detail=True, methods=['post'])
     def retry(self, request, pk=None):
@@ -857,4 +871,12 @@ class EmailAttachmentViewSet(viewsets.ModelViewSet):
         email_id = self.request.data.get('email')
         if not email_id:
             raise serializers.ValidationError({'email': 'This field is required.'})
-        serializer.save(email_id=email_id) 
+        file = self.request.FILES.get('file')
+        if not file:
+            raise serializers.ValidationError({'file': 'This field is required.'})
+        serializer.save(
+            email_id=email_id,
+            filename=file.name,
+            content_type=file.content_type,
+            file_size=file.size,
+        ) 
