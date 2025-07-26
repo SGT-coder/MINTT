@@ -3403,3 +3403,5 @@ WARNING 2025-07-25 22:19:41,843 log 11940 13512 Unauthorized: /api/token/
 WARNING 2025-07-25 22:28:33,331 log 11940 14016 Unauthorized: /api/emails/sync/
 WARNING 2025-07-25 22:28:34,736 log 11940 14016 Not Found: /favicon.ico
 WARNING 2025-07-25 22:30:34,804 log 11940 128 Unauthorized: /api/emails/sync/
+INFO 2025-07-26 11:06:41,303 autoreload 10704 140503129764096 Watching for file changes with StatReloader
+WARNING 2025-07-26 11:07:21,584 log 10704 140503036196544 Unauthorized: /api/
